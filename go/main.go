@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-var IsLetter = regexp.MustCompile(`^[a-zA-Z]`).MatchString
+var IsLetter = regexp.MustCompile(`^[a-zA-Zа-яА-Я]`).MatchString
 
 func convolve_s(s *string) (string, error) {
 	if !IsLetter(*s) {
